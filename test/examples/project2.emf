@@ -1,0 +1,10 @@
+<%
+const user = "Carl";
+const age = 33;
+%>
+<## project2/index.js ##>
+console.log("Hello, <%-user%>!");
+console.log("I know you are <%-age%>");
+
+<## project2/package.json ##>
+{}
