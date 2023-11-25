@@ -5,8 +5,10 @@ Render multiple files from one EJS template.
 ## Installation
 
 ```sh
-npm install
+npm install ejs-multifiles
 ```
+
+The Github project is found at [https://github.com/allnulled/ejs-multifiles](https://github.com/allnulled/ejs-multifiles).
 
 The NPM package is found at [https://www.npmjs.com/package/ejs-multifiles](https://www.npmjs.com/package/ejs-multifiles).
 
