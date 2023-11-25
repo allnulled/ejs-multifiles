@@ -1,6 +1,6 @@
 {
   "name": "ejs-multifiles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Embedded JavaScript that accepts multiple file output.",
   "main": "src/ejs-multifiles.js",
   "scripts": {
