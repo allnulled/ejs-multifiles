@@ -2,7 +2,10 @@
     "name": "ejs-multifiles",
     "version": "1.0.4",
     "description": "Embedded JavaScript that accepts multiple file output.",
-    "main": "src/ejs-multifiles.js",
+    "main": "src/emf.api.js",
+    "bin": {
+      "emf": "./src/emf.bin.js"
+    },
     "scripts": {
         "build": "npm run build-parser",
         "build-api": "npx browserify src/ejs-multifile.js",
