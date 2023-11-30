@@ -4,6 +4,9 @@
   "description": "Embedded JavaScript that accepts multiple file output.",
   "main": "src/ejs-multifiles.js",
   "scripts": {
+    "build": "npm run build-parser",
+    "build-api": "npx browserify src/ejs-multifile.js",
+    "build-parser": "npx pegjs src/file-splitter-syntax.pegjs",
     "test": "node test/test.js"
   },
   "keywords": [],

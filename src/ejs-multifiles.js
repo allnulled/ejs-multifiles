@@ -10,9 +10,7 @@
         module.exports = mod;
     }
 })(function() {
-    const fs = require("fs");
     const ejs = require("ejs");
-    const path = require("path");
     const FileSplitter = require(__dirname + "/file-splitter-syntax.js");
     const emf = {};
     emf.render = async function(template, parameters = {}, configurations = {}) {
@@ -23,8 +21,8 @@
                 const item = files[index];
                 const { file, contents } = item;
                 const basedir = configurations.basedir ? configurations.basedir : process.cwd();
-                const final_file = path.resolve(basedir, file);
-                fs.writeFileSync(final_file, contents, "utf8");
+                const final_file = require("path").resolve(basedir, file);
+                require("fs").writeFileSync(final_file, contents, "utf8");
             }
         } catch (error) {
             console.log(error);
@@ -33,8 +31,8 @@
     };
     emf.renderFile = function(file, parameters = {}, configurations = {}) {
         try {
-            const contents = fs.readFileSync(file).toString();
-            configurations.basedir = path.dirname(file);
+            const contents = require("fs").readFileSync(file).toString();
+            configurations.basedir = require("path").dirname(file);
             return emf.render(contents, parameters, configurations);
         } catch (error) {
             console.log(error);
