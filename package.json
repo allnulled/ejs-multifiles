@@ -1,30 +1,31 @@
 {
-  "name": "ejs-multifiles",
-  "version": "1.0.4",
-  "description": "Embedded JavaScript that accepts multiple file output.",
-  "main": "src/ejs-multifiles.js",
-  "scripts": {
-    "build": "npm run build-parser",
-    "build-api": "npx browserify src/ejs-multifile.js",
-    "build-parser": "npx pegjs src/file-splitter-syntax.pegjs",
-    "test": "node test/test.js"
-  },
-  "keywords": [],
-  "author": "allnulled",
-  "license": "WTFPL",
-  "dependencies": {
-    "ejs": "^3.1.9"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/allnulled/ejs-multifiles.git"
-  },
-  "bugs": {
-    "url": "https://github.com/allnulled/ejs-multifiles/issues"
-  },
-  "homepage": "https://github.com/allnulled/ejs-multifiles#readme"
+    "name": "ejs-multifiles",
+    "version": "1.0.4",
+    "description": "Embedded JavaScript that accepts multiple file output.",
+    "main": "src/ejs-multifiles.js",
+    "scripts": {
+        "build": "npm run build-parser",
+        "build-api": "npx browserify src/ejs-multifile.js",
+        "build-parser": "npx pegjs src/file-splitter-syntax.pegjs",
+        "test": "node test/test.js"
+    },
+    "keywords": [],
+    "author": "allnulled",
+    "license": "WTFPL",
+    "dependencies": {
+        "ejs": "^3.1.9"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/allnulled/ejs-multifiles.git"
+    },
+    "bugs": {
+        "url": "https://github.com/allnulled/ejs-multifiles/issues"
+    },
+    "homepage": "https://github.com/allnulled/ejs-multifiles#readme",
+    "uuid_commit": 1
 }
