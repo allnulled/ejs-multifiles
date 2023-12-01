@@ -38,6 +38,18 @@ console.log("I know you are <%-age%>");
 
 <## package.json ##>
 {}
+
+<## mkdir src ##>
+
+Carpeta para ficheros fuente.
+
+<## mkdir test ##>
+
+Carpeta para ficheros de test.
+
+<## mkdir dist ##>
+
+Carpeta para ficheros de distribución.
 ```
 
 As you can see, we define in `default.txt` file (the default file of every template) some variables.

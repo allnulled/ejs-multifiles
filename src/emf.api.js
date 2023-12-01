@@ -19,10 +19,14 @@
             const files = FileSplitter.parse(output);
             for(let index=0; index<files.length; index++) {
                 const item = files[index];
-                const { file, contents } = item;
+                const { type: filetype, file, contents } = item;
                 const basedir = configurations.basedir ? configurations.basedir : process.cwd();
                 const final_file = require("path").resolve(basedir, file);
-                require("fs").writeFileSync(final_file, contents, "utf8");
+                if(filetype === "file") {
+                    require("fs").writeFileSync(final_file, contents, "utf8");
+                } else if(filetype === "folder") {
+                    require("fs").mkdirSync(final_file);
+                }
             }
         } catch (error) {
             console.log(error);

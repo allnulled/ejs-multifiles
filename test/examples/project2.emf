@@ -8,3 +8,15 @@ console.log("I know you are <%-age%>");
 
 <## project2/package.json ##>
 {}
+
+<## mkdir project2/lib ##>
+Comentarios que no saldrán en ningún lado.
+
+<## mkdir project2/lib1 ##>
+Comentarios que no saldrán en ningún lado.
+
+<## mkdir project2/lib2 ##>
+Comentarios que no saldrán en ningún lado.
+
+<## mkdir project2/lib3 ##>
+Comentarios que no saldrán en ningún lado.

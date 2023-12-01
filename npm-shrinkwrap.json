@@ -7,10 +7,14 @@
     "": {
       "name": "ejs-multifiles",
       "version": "1.0.5",
-      "license": "ISC",
+      "license": "WTFPL",
       "dependencies": {
         "ejs": "^3.1.9"
-      }
+      },
+      "bin": {
+        "emf": "src/emf.bin.js"
+      },
+      "devDependencies": {}
     },
     "node_modules/ansi-styles": {
       "version": "4.3.0",
