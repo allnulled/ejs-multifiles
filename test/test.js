@@ -1,5 +1,5 @@
 const fs = require("fs");
-const emf = require(__dirname + "/../src/ejs-multifiles.js");
+const emf = require(__dirname + "/../src/emf.api.js");
 const contents = fs.readFileSync(__dirname + "/examples/project1.emf").toString();
 
 const main = async function() {

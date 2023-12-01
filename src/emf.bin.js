@@ -16,4 +16,5 @@ const main = async function() {
     } catch (error) {
         console.error(error);
     }
-}
+};
+main();
